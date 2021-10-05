@@ -5,7 +5,7 @@ using System;
 namespace RectangleTest
 {
     [TestClass]
-    public class UnitTest1
+    public class RectangleUnitTest
     {
         [TestMethod]
         public void TestDefaultConstructor()
