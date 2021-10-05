@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assignment2_QA
 {
-    class Rectangle
+    public class Rectangle
     {
         private int width;
         private int height;
