@@ -51,6 +51,7 @@ namespace RectangleTest
             Assert.AreEqual(4, p);
         }
 
+        [TestMethod]
         public void TestPerimeterCustomConstructor()
         {
             //instance obj
@@ -76,6 +77,7 @@ namespace RectangleTest
             Assert.AreEqual(1, a);
         }
 
+        [TestMethod]
         public void TestAreaCustomConstructor()
         {
             //instance obj
