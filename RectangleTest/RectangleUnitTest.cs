@@ -65,6 +65,19 @@ namespace RectangleTest
         }
 
         [TestMethod]
+        public void TestPerimeterNegativeValues()
+        {
+            //instance obj
+            Rectangle rectangle = new Rectangle(-2, 4);
+
+            //getting perimeter value
+            int p = rectangle.getPerimeter();
+
+            //asserting
+            Assert.AreEqual(10, p);
+        }
+
+        [TestMethod]
         public void TestAreaDefaultConstructor()
         {
             //instance obj
@@ -84,10 +97,23 @@ namespace RectangleTest
             Rectangle rectangle = new Rectangle(2, 4);
 
             //getting perimeter value
-            int p = rectangle.getArea();
+            int a = rectangle.getArea();
 
             //asserting
-            Assert.AreEqual(8, p);
+            Assert.AreEqual(8, a);
+        }
+
+        [TestMethod]
+        public void TestAreaNegativeValues()
+        {
+            //instance obj
+            Rectangle rectangle = new Rectangle(-2, 4);
+
+            //getting perimeter value
+            int a = rectangle.getArea();
+
+            //asserting
+            Assert.AreEqual(4, a);
         }
 
     }

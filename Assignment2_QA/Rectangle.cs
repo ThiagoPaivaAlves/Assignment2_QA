@@ -18,8 +18,14 @@ namespace Assignment2_QA
         }
         public Rectangle(int width, int height)
         {
-            this.width = width;
-            this.height = height;
+            if (width < 0)
+                this.width = 1;
+            else
+                this.width = width;
+            if (height < 0)
+                this.height = 1;
+            else
+                this.height = height;
         }
 
         public int Width { get => width; set => width = value; }
